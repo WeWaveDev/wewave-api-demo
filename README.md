@@ -19,3 +19,7 @@
 - Crypto: X:BTCUSD, X:ETHUSD, X:DOGEUSD
 - Forex: C:EURUSD, C:USDJPY, C:GBPUSD
 - Index: INDX:SPX, INDX:VIX
+
+## Questions
+
+Contact: team@wewave.app
