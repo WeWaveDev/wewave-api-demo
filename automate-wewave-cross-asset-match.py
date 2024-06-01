@@ -5,6 +5,8 @@ import requests
 
 url = "https://api.wewave.ai/api/v1/cross-asset-match?apiKey=h7i8j9k0l1m2n3o4p5q6r7s8t9u0v1w2"
 
+ticker_to_analyze = "NVDA"
+
 startTimestamp = datetime.datetime.now() - datetime.timedelta(days=300)
 endTimestamp = datetime.datetime.now() - datetime.timedelta(days=2)
 
@@ -13,8 +15,6 @@ startTimestamp = int(startTimestamp.timestamp() * 1000)
 endTimestamp = int(endTimestamp.timestamp() * 1000)
 
 print(startTimestamp, endTimestamp)
-
-ticker_to_analyze = "NVDA"
 
 payload = json.dumps({
   "symbol": ticker_to_analyze,

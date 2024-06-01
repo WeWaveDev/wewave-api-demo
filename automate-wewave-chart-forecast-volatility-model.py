@@ -5,14 +5,8 @@ import requests
 
 url = "https://api.wewave.ai/api/v1/historical-pattern-match-models?apiKey=h7i8j9k0l1m2n3o4p5q6r7s8t9u0v1w2"
 
-payload = json.dumps({
-  "ticker": "SPY",
-  "timeInterval": "1D",
-  "startTime": 1708387200000,
-  "endTime": 1716854400000,
-  "modelName": "volatilityModel",
-  "numberOfStdDev": 2
-})
+ticker_to_analyze = "NVDA"
+
 # start timestamp is millisecond epoch time of now -32 days
 # end timestamp is millisecond epoch time of now - 2 days
 # using datetime lib
@@ -25,7 +19,6 @@ endTimestamp = int(endTimestamp.timestamp() * 1000)
 
 print(startTimestamp, endTimestamp)
 
-ticker_to_analyze = "NVDA"
 
 payload = json.dumps({
   "ticker": ticker_to_analyze,
